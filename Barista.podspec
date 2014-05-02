@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'Core' do |core|
-    s.dependency 'CocoaAsyncSocket', '~> 7.0'
-    s.dependency 'JLRoutes', '~> 1.4'
+    s.dependency 'CocoaAsyncSocket', '~> 7.3'
+    s.dependency 'JLRoutes', '~> 1.5'
 
     s.source_files = 'Barista/*.h', 'Barista/Core/*.{h,m}'
     s.framework    = 'Foundation', 'Security'
@@ -60,7 +60,7 @@ Pod::Spec.new do |s|
       templates.source_files = 'Barista/Middleware/Templates/*.{h,m}'
 
       templates.subspec 'Mustache' do |mustache|
-        mustache.dependency 'GRMustache', '~> 6.4.1'
+        mustache.dependency 'GRMustache', '~> 7.0'
         mustache.source_files = 'Barista/Middleware/Templates/Mustache/*.{h,m}'
       end
     end
